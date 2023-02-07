@@ -1,0 +1,135 @@
+:root{
+    --blue:#1f2039;
+    --purple:#8e86b5;
+    --darkblue:#242424;
+
+}
+*{
+    margin: 0px;
+}
+
+body{
+    background-color: var(--blue);
+    color: white;
+
+}
+nav, footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;  
+    padding: 10px;
+}
+.d4{
+display: flex;
+gap: 30px;
+color: var(--purple);
+}
+a{
+    text-decoration: none;
+}
+.s1 h1{
+    font-weight: 100;
+    font-size:50px;
+    color:var(--purple); 
+    width: 50%;
+    margin: auto ;
+    padding: 20px;
+}
+.s2 h1{
+    font-weight: 100;
+    font-size:50px;
+    color:var(--purple); 
+    text-align: center;
+}
+.s1{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+
+}
+.d1{
+   width: 100%;
+    margin: auto;
+    padding-top:10px ;
+}
+.a1{
+    margin: 80px;
+    padding: 15px;
+    border: 1px solid blue;
+    background-color: white;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+.s1 img{
+    padding-top: 40px;
+    margin-right: 80px;
+} 
+.s3 h1{
+    font-weight: 100;
+    font-size:50px;
+    color:var(--purple); 
+    text-align: center;
+    
+}
+.s1 p{
+    display: block;
+   padding: 20px 80px;
+}
+.d2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap: 10px;
+}
+.s2{
+    background-color: white;
+    width: 100%;
+
+}
+.s2 img{
+    width: 100%;
+}
+.d3{
+    width: 50%;
+    margin: auto;
+}
+input{ 
+    display: inline;
+}
+.l1{
+    position: relative;
+    left: 150px;
+}
+button{
+    color: var(--darkblue);
+    background-color: var(--purple);
+    border: 1px solid darkmagenta;
+    border-radius: 50px;;
+}
+@media screen and (max-width:900px){
+    nav, .d4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px;
+       
+    }
+    .s1{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: 0px;
+    }
+    .a1{
+       margin: 180px;
+    }
+    .s2{
+        margin-top: 20px;
+    }
+    .d3{
+        width: 50%;
+        margin: auto;
+    }
+}
